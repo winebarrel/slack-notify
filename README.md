@@ -20,3 +20,9 @@ Usage of slack-notify:
 export SLACK_WEBHOOK_URL="https://hooks.slack.com/services/XXXXXXXXX/XXXXXXXXX/XXXXXXXXXXXXXXXXXXXXXXXX"
 cat hello | slack-notify -i :ghost: -u scott
 ```
+
+## Installation
+
+```
+brew install https://raw.githubusercontent.com/winebarrel/slack-notify/master/homebrew/slack-notify.rb
+```
