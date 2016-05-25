@@ -11,6 +11,8 @@ type SlackNotifyParams struct {
 	channel    string
 	username   string
 	icon_emoji string
+	parse      string
+	mrkdwn     bool
 }
 
 func ParseFlag() (params *SlackNotifyParams) {
@@ -20,6 +22,8 @@ func ParseFlag() (params *SlackNotifyParams) {
 	flag.StringVar(&params.channel, "c", "", "channel")
 	flag.StringVar(&params.username, "u", "", "username")
 	flag.StringVar(&params.icon_emoji, "i", "", "icon emoji")
+	flag.StringVar(&params.parse, "p", "", "parse")
+	flag.BoolVar(&params.mrkdwn, "m", false, "markdown")
 	flag.Parse()
 
 	if params.url == "" {
