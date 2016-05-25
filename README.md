@@ -23,6 +23,14 @@ cat hello | slack-notify -i :ghost: -u scott
 
 ## Installation
 
-```
+### OS X
+
+```sh
 brew install https://raw.githubusercontent.com/winebarrel/slack-notify/master/homebrew/slack-notify.rb
+```
+
+### Ubuntu
+
+```sh
+wget -q -O- https://github.com/winebarrel/slack-notify/releases/download/v0.1.0/slack-notify_0.1.0_amd64.deb | dpkg -i -
 ```
