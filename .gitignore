@@ -1,2 +1,6 @@
 /slack-notify
 /*.gz
+/debian/slack-notify.debhelper.log
+/debian/slack-notify.substvars
+/debian/slack-notify/
+/debian/files
