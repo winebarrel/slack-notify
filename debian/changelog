@@ -1,3 +1,9 @@
+slack-notify (0.1.1) unstable; urgency=low
+
+  * Support -p/-m options
+
+ -- Genki Sugawara <sgwr_dts@yahoo.co.jp>  Thu, 26 May 2016 02:46:02 +0000
+
 slack-notify (0.1.0) unstable; urgency=low
 
   * Initial Release.
