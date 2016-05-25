@@ -5,7 +5,7 @@ class SlackNotify < Formula
 
   homepage 'https://github.com/winebarrel/slack-notify'
   url "https://github.com/winebarrel/slack-notify/releases/download/v#{VERSION}/slack-notify-v#{VERSION}-darwin-amd64.gz"
-  sha256 '...'
+  sha256 '71a507dc4228c024ca132773c9b8abdac7056cd024dddf67d01cfdb81f8a6056'
   version VERSION
   head 'https://github.com/winebarrel/slack-notify.git', :branch => 'master'
 
