@@ -32,5 +32,5 @@ brew install https://raw.githubusercontent.com/winebarrel/slack-notify/master/ho
 ### Ubuntu
 
 ```sh
-wget -q -O- https://github.com/winebarrel/slack-notify/releases/download/v0.1.0/slack-notify_0.1.0_amd64.deb | dpkg -i -
+wget -q -O- https://github.com/winebarrel/slack-notify/releases/download/v0.1.1/slack-notify_0.1.1_amd64.deb | dpkg -i -
 ```
