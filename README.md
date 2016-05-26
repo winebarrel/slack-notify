@@ -7,13 +7,16 @@ Notify message to Slack channel.
 ```
 Usage of slack-notify:
   -c string
-      channel
+    	channel
   -i string
-      icon emoji
+    	icon emoji
+  -m	enable markdown
+  -p string
+    	parse [full|none]
   -u string
-      username
+    	username
   -url string
-      webhook url
+    	webhook url
 ```
 
 ```sh
