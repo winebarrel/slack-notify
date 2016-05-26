@@ -22,8 +22,8 @@ func ParseFlag() (params *SlackNotifyParams) {
 	flag.StringVar(&params.channel, "c", "", "channel")
 	flag.StringVar(&params.username, "u", "", "username")
 	flag.StringVar(&params.icon_emoji, "i", "", "icon emoji")
-	flag.StringVar(&params.parse, "p", "", "parse")
-	flag.BoolVar(&params.mrkdwn, "m", false, "markdown")
+	flag.StringVar(&params.parse, "p", "", "parse [full|none]")
+	flag.BoolVar(&params.mrkdwn, "m", false, "enable markdown")
 	flag.Parse()
 
 	if params.url == "" {
