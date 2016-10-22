@@ -29,10 +29,8 @@ package: clean slack-notify
 	gzip -c slack-notify > pkg/slack-notify-$(VERSION)-$(GOOS)-$(GOARCH).gz
 
 package\:linux:
-	docker run --name $(UBUNTU_CONTAINER_NAME) -v $(shell pwd):/tmp/src $(UBUNTU_IMAGE) make -C /tmp/src package:linux:docker
+	docker run --name $(UBUNTU_CONTAINER_NAME) -v $(shell pwd):/tmp/src $(UBUNTU_IMAGE) make -C /tmp/src package
 	docker rm $(UBUNTU_CONTAINER_NAME)
-
-package\:linux\:docker: package
 
 deb:
 	docker run --name $(UBUNTU_CONTAINER_NAME) -v $(shell pwd):/tmp/src $(UBUNTU_IMAGE) make -C /tmp/src deb:docker
