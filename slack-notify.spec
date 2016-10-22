@@ -22,9 +22,9 @@ make
 
 %install
 rm -rf %{buildroot}
-mkdir -p %{buildroot}/usr/sbin
-install -m 700 slack-notify %{buildroot}/usr/sbin/
+mkdir -p %{buildroot}/usr/bin
+install -m 755 slack-notify %{buildroot}/usr/bin/
 
 %files
-%defattr(700,root,root,-)
-/usr/sbin/slack-notify
+%defattr(755,root,root,-)
+/usr/bin/slack-notify
