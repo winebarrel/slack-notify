@@ -23,10 +23,10 @@ ifeq ($(GOOS),linux)
 endif
 
 clean:
-	rm -f slack-notify *.gz
+	rm -f slack-notify *.gz pkg/*
 
 package: clean slack-notify
-	gzip -c slack-notify > slack-notify-$(VERSION)-$(GOOS)-$(GOARCH).gz
+	gzip -c slack-notify > pkg/slack-notify-$(VERSION)-$(GOOS)-$(GOARCH).gz
 
 package\:linux:
 	docker run --name $(UBUNTU_CONTAINER_NAME) -v $(shell pwd):/tmp/src $(UBUNTU_IMAGE) make -C /tmp/src package:linux:docker
