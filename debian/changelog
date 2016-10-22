@@ -1,6 +1,13 @@
+slack-notify (0.1.2) unstable; urgency=low
+
+  * Update go version.
+  * Fix build option. (force static link)
+
+ -- Genki Sugawara <sgwr_dts@yahoo.co.jp>  Sat, 22 Oct 2016 18:12:35 +0900
+
 slack-notify (0.1.1) unstable; urgency=low
 
-  * Support -p/-m options
+  * Support -p/-m options.
 
  -- Genki Sugawara <sgwr_dts@yahoo.co.jp>  Thu, 26 May 2016 02:46:02 +0000
 

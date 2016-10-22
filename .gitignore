@@ -4,3 +4,5 @@
 /debian/slack-notify.substvars
 /debian/slack-notify/
 /debian/files
+/pkg/slack-notify*
+.DS_Store
