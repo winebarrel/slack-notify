@@ -1,11 +1,11 @@
-FROM centos:centos6
+FROM ubuntu:trusty
 MAINTAINER Genki Sugawara <sgwr_dts@yahoo.co.jp>
 
 USER root
 WORKDIR /
 
-RUN yum install -y rpmdevtools make git
-RUN rpmdev-setuptree
+RUN apt-get update
+RUN apt-get install -y debhelper wget git
 
 ENV GO_VERSION 1.7.1
 ENV GOROOT=/usr/local/go
