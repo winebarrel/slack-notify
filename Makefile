@@ -33,7 +33,6 @@ package\:linux:
 	docker rm $(UBUNTU_CONTAINER_NAME)
 
 package\:linux\:docker: package
-	mv slack-notify-*.gz pkg/
 
 deb:
 	docker run --name $(UBUNTU_CONTAINER_NAME) -v $(shell pwd):/tmp/src $(UBUNTU_IMAGE) make -C /tmp/src deb:docker
