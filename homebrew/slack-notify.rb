@@ -1,11 +1,11 @@
 require 'formula'
 
 class SlackNotify < Formula
-  VERSION = '0.1.1'
+  VERSION = '0.1.2'
 
   homepage 'https://github.com/winebarrel/slack-notify'
   url "https://github.com/winebarrel/slack-notify/releases/download/v#{VERSION}/slack-notify-v#{VERSION}-darwin-amd64.gz"
-  sha256 '8a61240c891cde8d7cfc9a50044cfe8d55d63fdeb8c15d044d7f76e149d4bece'
+  sha256 '6313bd715d2dd733fcd0944290d49f63278bf5cbbbde7176a2715caeb492ca86'
   version VERSION
   head 'https://github.com/winebarrel/slack-notify.git', :branch => 'master'
 
